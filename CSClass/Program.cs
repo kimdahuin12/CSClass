@@ -19,6 +19,16 @@ namespace CSClass
             Console.WriteLine(random.Next(10, 100));
             Console.WriteLine(random.NextDouble());
             Console.WriteLine(random.NextDouble()*10);
+
+            List<int> list = new List<int>() { 52, 273, 32, 64};
+
+            list.Remove(52);
+
+            foreach (int item in list)
+            {
+                Console.WriteLine("count : " + list.Count+" Item : " +item);
+            }
+
         }
     }
 }
