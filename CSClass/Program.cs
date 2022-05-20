@@ -35,6 +35,8 @@ namespace CSClass
             Console.WriteLine(Math.Round(342.22));
             Console.WriteLine(Math.PI);
 
+            Hamberger nyam = new Hamberger();
+
         }
     }
 }
