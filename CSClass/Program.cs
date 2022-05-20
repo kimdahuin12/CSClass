@@ -37,6 +37,22 @@ namespace CSClass
 
             Hamberger nyam = new Hamberger();
 
+            Product productA = new Product();
+            productA.name = "포켓몬빵";
+            productA.price = 1500;
+            Product productB = new Product() { name="소금빵", price=2000};
+            Product productC = new Product() { price=4000, name="당근케이크"};
+            Product productD = new Product() { price = 4000};
+            Product productE = new Product() { name="보름달" };
+
+            Console.WriteLine("=================================================");
+            Console.WriteLine("제품명 : "+productA.name +", 가격 : "+ productA.price);
+            Console.WriteLine("제품명 : " + productB.name + ", 가격 : " + productB.price);
+            Console.WriteLine("제품명 : " + productC.name + ", 가격 : " + productC.price);
+            Console.WriteLine("제품명 : " + productD.name + ", 가격 : " + productD.price);
+            Console.WriteLine("제품명 : " + productE.name + ", 가격 : " + productE.price);
+
+
         }
     }
 }
