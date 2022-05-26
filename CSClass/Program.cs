@@ -52,6 +52,39 @@ namespace CSClass
             Console.WriteLine("제품명 : " + productD.name + ", 가격 : " + productD.price);
             Console.WriteLine("제품명 : " + productE.name + ", 가격 : " + productE.price);
 
+            List<Student> students = new List<Student>() {
+                new Student() { name = "김다흰", grade = 3 },
+                new Student() { name = "홍길동", grade = 1 },
+                new Student() { name = "이똥개", grade = 4 },
+                new Student() { name = "김황소", grade = 2 },
+                new Student() { name = "이하나", grade = 1 },
+                new Student() { name = "정바름", grade = 4 },
+                new Student() { name = "나일등", grade = 3 }
+            };
+
+            //list에서 값 지우기
+
+            //for (int i = 0; i < students.Count; i++)
+            //{
+            //    if (students[i].grade > 2)
+            //    {
+            //        students.RemoveAt(i);
+            //        i--;
+            //    }
+            //}
+
+            for (int i = students.Count-1; i >= 0; i--)
+            {
+                if (students[i].grade > 2)
+                {
+                    students.RemoveAt(i);
+                }
+            }
+
+            foreach (var student in students)
+            {
+                Console.WriteLine(student);
+            }
 
         }
     }
