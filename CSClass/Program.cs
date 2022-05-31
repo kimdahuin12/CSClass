@@ -86,6 +86,11 @@ namespace CSClass
                 Console.WriteLine(student);
             }
 
+            Method method = new Method();
+            Console.WriteLine(method.Multi(52.1, 273));
+            
+
+
         }
     }
 }
