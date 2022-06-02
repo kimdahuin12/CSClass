@@ -1,7 +1,28 @@
-﻿namespace CSClass
+﻿using System;
+
+namespace CSClass
 {
     class Product
     {
+        public static int counter = 0;
+        public int id;
+
+        public Product(string name, int price)
+        {
+            Product.counter++;
+            this.id = Product.counter;
+            this.name = name;
+            this.price = price;
+
+            Console.WriteLine(this.ToString());
+
+        }
+
+        public override string ToString()
+        {
+            return this.id + ":" + this.name + " (" + this.price+"원)";
+        }
+
         public static string MADEIN = "Korea";
 
         /// <summary>

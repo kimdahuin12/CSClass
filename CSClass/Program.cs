@@ -109,10 +109,23 @@ namespace CSClass
             Console.WriteLine(MyMath.Abs(21474836789L));
             Console.WriteLine(MyMath.Abs(-21474836789L));
 
+            //constructor
+            Product product1 = new Product("감자", 3000);
+            Product product2 = new Product("고구마", 5000);
+            Console.WriteLine(Product.counter + "개 생성되었습니다.");
 
+            //정적 생성자는 인스턴스를 생성하는 초기 시점에 한 번만 호출됨.(클래스를 처음 사용하는 시점)
+            Console.WriteLine("첫번째 위치");
+            Console.WriteLine(Sample.value);
+            Console.WriteLine("두번째 위치");
+            Sample sample = new Sample();
+            Console.WriteLine("세번째 위치");
 
-
-
+            //Console.WriteLine("첫번째 위치");
+            //Sample sample = new Sample();
+            //Console.WriteLine("두번째 위치");
+            //Console.WriteLine(Sample.value);
+            //Console.WriteLine("세번째 위치");
         }
 
 
