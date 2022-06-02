@@ -90,7 +90,12 @@ namespace CSClass
             Console.WriteLine(method.Multi(52.1, 273));
             Console.WriteLine(method.Sum(1, 100));
             Console.WriteLine(method.Multiply(1, 10));
-
+            Console.WriteLine(Method.Abs(100));
+            //인스턴스 변수에서 클래스 변수 혹은 메서드에는 접근불가능
+            //Console.WriteLine(method.Abs(100)); 
+            Method.some();
         }
+
+
     }
 }
