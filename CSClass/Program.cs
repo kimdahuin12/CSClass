@@ -94,6 +94,25 @@ namespace CSClass
             //인스턴스 변수에서 클래스 변수 혹은 메서드에는 접근불가능
             //Console.WriteLine(method.Abs(100)); 
             Method.some();
+
+            //Method Overloading
+
+            //int
+            Console.WriteLine(MyMath.Abs(52));
+            Console.WriteLine(MyMath.Abs(-273));
+
+            //double
+            Console.WriteLine(MyMath.Abs(52.273));
+            Console.WriteLine(MyMath.Abs(-32.103));
+
+            //long
+            Console.WriteLine(MyMath.Abs(21474836789L));
+            Console.WriteLine(MyMath.Abs(-21474836789L));
+
+
+
+
+
         }
 
 
