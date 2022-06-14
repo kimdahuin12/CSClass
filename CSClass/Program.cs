@@ -140,11 +140,11 @@ namespace CSClass
             Console.WriteLine("box의 면적은 : " + box.Area);
 
             Fibonacci fibo = new Fibonacci();
-            Console.WriteLine(Fibonacci.Get(1));
-            Console.WriteLine(Fibonacci.Get(10));
-            Console.WriteLine(Fibonacci.Get(100));
-            Console.WriteLine(Fibonacci.Get(1000));
-            Console.WriteLine(Fibonacci.Get(10000));
+            //Console.WriteLine(Fibonacci.Get(1));
+            //Console.WriteLine(Fibonacci.Get(10));
+            //Console.WriteLine(Fibonacci.Get(100));
+            //Console.WriteLine(Fibonacci.Get(1000));
+            //Console.WriteLine(Fibonacci.Get(10000));
 
             List<Animal> Animals = new List<Animal>() { new Dog(), new Dog(), new Dog(), new Cat(), new Cat(), new Cat() };
 
@@ -152,6 +152,12 @@ namespace CSClass
             {
                 item.Eat();
                 item.Sleep();
+
+                var dog = item as Dog;
+                if (dog != null) dog.Bark();
+                var cat = item as Cat;
+                if(cat!=null) cat.Meow();
+
                 if(item is Dog)
                 {
                     ((Dog)item).Bark();
