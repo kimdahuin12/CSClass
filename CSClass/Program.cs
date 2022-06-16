@@ -8,6 +8,8 @@ namespace CSClass
 {
     class Program
     {
+        public static int number = 10;
+
         static void Main(string[] args)
         {
             //Car car = new Car();
@@ -146,7 +148,7 @@ namespace CSClass
             //Console.WriteLine(Fibonacci.Get(1000));
             //Console.WriteLine(Fibonacci.Get(10000));
 
-            //List<Animal> Animals = new List<Animal>() { new Dog(), new Dog(), new Dog(), new Cat(), new Cat(), new Cat() };
+            List<Animal> Animals = new List<Animal>() { new Dog(), new Dog(), new Dog(), new Cat(), new Cat(), new Cat() };
 
             //foreach (var item in Animals)
             //{
@@ -177,6 +179,25 @@ namespace CSClass
             Console.WriteLine("p counter : " + Parent.counter + " / c counter : " + Child.counter);
             child.CountParent();
             Console.WriteLine("p counter : " + Parent.counter + " / c counter : " + Child.counter);
+
+            //섀도잉
+            int number = 20;
+            Console.WriteLine(number);
+
+            //하이딩
+            Child c = new Child();
+            Console.WriteLine(c.variable);
+            Console.WriteLine(((Parent)c).variable);
+
+            c.Method();
+            ((Parent)c).Method();
+            c.Method2();
+            ((Parent)c).Method2();
+
+            foreach(var item in Animals)
+            {
+                item.Eat();
+            }
 
         }
 

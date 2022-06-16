@@ -2,8 +2,19 @@
 
 namespace CSClass
 {
-    public class Child:Parent
+    public class Child: Parent
     {
+        public new string variable = "hiding";
+
+        public new void Method() //하이딩
+        {
+            Console.WriteLine("자식의 메서드");
+        }
+
+        public override void Method2() 
+        {
+            Console.WriteLine("자식의 메서드");
+        }
 
         public Child() :base(10)
         {
