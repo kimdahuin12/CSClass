@@ -11,6 +11,11 @@ namespace CSClass
             Console.WriteLine("자식의 메서드");
         }
 
+        //public new void Method3() //하이딩
+        //{
+        //    Console.WriteLine("추상 메서드");
+        //}
+
         public override void Method2() 
         {
             Console.WriteLine("자식의 메서드");
@@ -31,5 +36,9 @@ namespace CSClass
             Child.counter++; //Parent의 counter를 증가
         }
 
+        public override void Method3()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

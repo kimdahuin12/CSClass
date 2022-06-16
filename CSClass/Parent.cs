@@ -2,11 +2,13 @@
 
 namespace CSClass
 {
+    //public sealed class Parent
+    //public abstract class Parent
     public class Parent
     {
         public static int counter = 0;
         public int variable = 273;
-
+        //abstract public void Method3();
         public void Method()
         {
             Console.WriteLine("부모의 메서드");
